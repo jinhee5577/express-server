@@ -14,7 +14,7 @@ MongoClient.connect(process.env.DB_URL, { useUnifiedTopology: true }, (에러, c
     db = client.db('jiniDash');  // jiniDash라는 database 연결좀요.
     // database접속이 완료되면 콜백함수를 실행해준다.
     app.listen(process.env.PORT, () => { //  app.listen()은 원하는 포트에 서버를 오픈하는 문법이라고 보면 된다.
-        console.log('listening on 8080');
+        console.log('listening on 8082');
     });
     // 여기까지가 서버를 띄우기 위해 작성할 기본 셋팅.
 });
@@ -45,7 +45,7 @@ app.get('/realestate', async (req, res) => {
     serviceKey : process.env.KEY,
     LAWD_CD : req.query.LAWD_CD,
     // numOfRows : 200,
-    DEAL_YMD : 202303,
+    DEAL_YMD : 202403,
   };
 
   try {

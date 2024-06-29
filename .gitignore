@@ -5,6 +5,7 @@
 
 # 내 [jiniDash] Front-end프로젝트.
 /material-dashboard-react-main
+
 /.pnp
 .pnp.js
 .env
